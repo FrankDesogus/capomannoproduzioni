@@ -5,6 +5,8 @@ import SkeletonProductGrid from "@modules/skeletons/templates/skeleton-product-g
 import RefinementList from "@modules/store/components/refinement-list"
 import { SortOptions } from "@modules/store/components/refinement-list/sort-products"
 import PaginatedProducts from "@modules/store/templates/paginated-products"
+import NegozioCategorie from "@modules/store/components/refinement-list/menu-negozio"
+import ListaCollezzioni from "@modules/store/components/refinement-list/menu-collezioni"
 
 export default function CollectionTemplate({
   sortBy,
@@ -21,7 +23,13 @@ export default function CollectionTemplate({
 
   return (
     <div className="flex flex-col small:flex-row small:items-start py-6 content-container">
-      <RefinementList sortBy={sortBy || "created_at"} />
+      <div className="hidden small:block">
+        <div className="w-full small:w-auto small:mr-6 mb-6 small:mb-0">
+          <RefinementList sortBy={sortBy || "created_at"} />
+          <NegozioCategorie />
+          <ListaCollezzioni />
+        </div>
+      </div>
       <div className="w-full">
         <div className="mb-8 text-2xl-semi">
           <h1>{collection.title}</h1>

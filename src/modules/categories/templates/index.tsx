@@ -8,6 +8,8 @@ import RefinementList from "@modules/store/components/refinement-list"
 import { SortOptions } from "@modules/store/components/refinement-list/sort-products"
 import PaginatedProducts from "@modules/store/templates/paginated-products"
 import LocalizedClientLink from "@modules/common/components/localized-client-link"
+import ListeCategorie from "../liste-categorie"
+import ListaCollezzioni from "@modules/store/components/refinement-list/menu-collezioni"
 
 export default function CategoryTemplate({
   categories,
@@ -29,7 +31,14 @@ export default function CategoryTemplate({
 
   return (
     <div className="flex flex-col small:flex-row small:items-start py-6 content-container" data-testid="category-container">
+      <div className= "hidden small:block">
+      <div className="w-full invisible lg:visible small:w-auto small:mr-6 mb-6 small:mb-0">
       <RefinementList sortBy={sortBy || "created_at"} data-testid="sort-by-container" />
+      <ListeCategorie categoryId={category.id} />
+      <ListaCollezzioni />
+
+      </div>
+      </div>
       <div className="w-full">
         <div className="flex flex-row mb-8 text-2xl-semi gap-4">
           {parents &&
@@ -50,19 +59,6 @@ export default function CategoryTemplate({
         {category.description && (
           <div className="mb-8 text-base-regular">
             <p>{category.description}</p>
-          </div>
-        )}
-        {category.category_children && (
-          <div className="mb-8 text-base-large">
-            <ul className="grid grid-cols-1 gap-2">
-              {category.category_children?.map((c) => (
-                <li key={c.id}>
-                  <InteractiveLink href={`/categories/${c.handle}`}>
-                    {c.name}
-                  </InteractiveLink>
-                </li>
-              ))}
-            </ul>
           </div>
         )}
         <Suspense fallback={<SkeletonProductGrid />}>
