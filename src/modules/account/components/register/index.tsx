@@ -19,10 +19,10 @@ const Register = ({ setCurrentView }: Props) => {
   return (
     <div className="max-w-sm flex flex-col items-center" data-testid="register-page">
       <h1 className="text-large-semi uppercase mb-6">
-        Diventa membro dell'Orientando Capo Mannu
+        Diventa membro di Orientando Capo Mannu
       </h1>
       <p className="text-center text-base-regular text-ui-fg-base mb-4">
-        Crea il tuo profilo di membro dell'Orientando Capo Mannu e ottieni accesso a un'esperienza di shopping migliorata.
+        Crea il tuo profilo di membro di Orientando Capo Mannu e accedi a un'esperienza di shopping migliorata.
       </p>
       <form className="w-full flex flex-col" action={formAction}>
         <div className="flex flex-col w-full gap-y-2">
@@ -63,10 +63,10 @@ const Register = ({ setCurrentView }: Props) => {
          
           .
         </span>
-        <SubmitButton className="w-full mt-6" data-testid="register-button">Unisciti</SubmitButton>
+        <SubmitButton className="w-full mt-6" data-testid="register-button">Iscriviti</SubmitButton>
       </form>
       <span className="text-center text-ui-fg-base text-small-regular mt-6">
-        Già membro?{" "}
+        Sei già membro?{" "}
         <button
           onClick={() => setCurrentView(LOGIN_VIEW.SIGN_IN)}
           className="underline"
