@@ -19,10 +19,11 @@ const Register = ({ setCurrentView }: Props) => {
   return (
     <div className="max-w-sm flex flex-col items-center" data-testid="register-page">
       <h1 className="text-large-semi uppercase mb-6">
-        Divanta un membro di Orientando Capo Mannu
+        Become a Medusa Store Member
       </h1>
       <p className="text-center text-base-regular text-ui-fg-base mb-4">
-        Crea il tuo profilo Orientando Capo Mannu , e ottieni l'accesso a una migliore esperienza di shopping.
+        Create your Medusa Store Member profile, and get access to an enhanced
+        shopping experience.
       </p>
       <form className="w-full flex flex-col" action={formAction}>
         <div className="flex flex-col w-full gap-y-2">
@@ -60,14 +61,14 @@ const Register = ({ setCurrentView }: Props) => {
         </div>
         <ErrorMessage error={message} data-testid="register-error" />
         <span className="text-center text-ui-fg-base text-small-regular mt-6">
-          Creando un Account, acconentirai a Orientando Capo Mannu&apos;s{" "}
+          By creating an account, you agree to Medusa Store&apos;s{" "}
           <LocalizedClientLink
             href="/content/privacy-policy"
             className="underline"
           >
             Privacy Policy
           </LocalizedClientLink>{" "}
-          e{" "}
+          and{" "}
           <LocalizedClientLink
             href="/content/terms-of-use"
             className="underline"
@@ -76,15 +77,15 @@ const Register = ({ setCurrentView }: Props) => {
           </LocalizedClientLink>
           .
         </span>
-        <SubmitButton className="w-full mt-6" data-testid="register-button">Unisciti</SubmitButton>
+        <SubmitButton className="w-full mt-6" data-testid="register-button">Join</SubmitButton>
       </form>
       <span className="text-center text-ui-fg-base text-small-regular mt-6">
-        Sei già membro?{" "}
+        Already a member?{" "}
         <button
           onClick={() => setCurrentView(LOGIN_VIEW.SIGN_IN)}
           className="underline"
         >
-          Registrati
+          Sign in
         </button>
         .
       </span>
