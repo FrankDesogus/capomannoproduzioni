@@ -7,7 +7,7 @@ import MedusaCTA from "@modules/layout/components/medusa-cta"
 
 export default async function Footer() {
   const { collections } = await getCollectionsList(0, 6)
-  const { product_categories } = await getCategoriesList(0, 6)
+  const { product_categories } = await getCategoriesList()
 
   return (
     <footer className="border-t border-ui-border-base w-full">
@@ -25,7 +25,7 @@ export default async function Footer() {
             {product_categories && product_categories?.length > 0 && (
               <div className="flex flex-col gap-y-2">
                 <span className="txt-small-plus txt-ui-fg-base">
-                  Categorie
+                  Categories
                 </span>
                 <ul className="grid grid-cols-1 gap-2" data-testid="footer-categories">
                   {product_categories?.map((c) => {
