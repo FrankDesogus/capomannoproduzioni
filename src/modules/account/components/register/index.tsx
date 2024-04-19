@@ -22,7 +22,7 @@ const Register = ({ setCurrentView }: Props) => {
         Diventa membro di Orientando Capo Mannu
       </h1>
       <p className="text-center text-base-regular text-ui-fg-base mb-4">
-        Crea il tuo profilo di membro di Orientando Capo Mannu e accedi a un&apos;esperienza di shopping migliorata.
+        Crea il tuo profilo di membro di Orientando Capo Mannu e accedi a un esperienza di shopping migliorata.
       </p>
       <form className="w-full flex flex-col" action={formAction}>
         <div className="flex flex-col w-full gap-y-2">
