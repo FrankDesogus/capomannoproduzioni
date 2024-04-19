@@ -10,8 +10,8 @@ import { getCustomer, listRegions } from "@lib/data"
 import { notFound } from "next/navigation"
 
 export const metadata: Metadata = {
-  title: "Profile",
-  description: "View and edit your Medusa Store profile.",
+  title: "Profilo",
+  description: "Vedi e modifica il tuo account Orientando Capo Mannu.",
 }
 
 export default async function Profile() {
