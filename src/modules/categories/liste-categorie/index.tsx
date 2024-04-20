@@ -6,7 +6,7 @@ import { getCategoriesList } from "@lib/data"
 import LocalizedClientLink from "@modules/common/components/localized-client-link"
 
 export default async function ListeCategorie({categoryId}:{categoryId?:string}) {
-    const { product_categories } = await getCategoriesList(0, 6)
+    const { product_categories } = await getCategoriesList()
 
     return (
         <div className="flex small:flex-col gap-12 py-4 mb-8 small:px-0 pl-6 small:min-w-[250px] small:ml-[1.675rem]">
@@ -16,7 +16,7 @@ export default async function ListeCategorie({categoryId}:{categoryId?:string}) 
                         Categorie
                     </span>
                     <ul className="grid grid-cols-1 gap-2" data-testid="footer-categories">
-                        {product_categories?.slice(0, 6).map((c) => {
+                        {product_categories?.map((c) => {
                             if (c.parent_category) {
                                 return
                             }
