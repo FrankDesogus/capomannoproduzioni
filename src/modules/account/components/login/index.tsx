@@ -15,9 +15,9 @@ const Login = ({ setCurrentView }: Props) => {
 
   return (
     <div className="max-w-sm w-full flex flex-col items-center" data-testid="login-page">
-      <h1 className="text-large-semi uppercase mb-6">Ben tornato</h1>
+      <h1 className="text-large-semi uppercase mb-6">Welcome back</h1>
       <p className="text-center text-base-regular text-ui-fg-base mb-8">
-        Accedi per accedere a un'esperienza di acquisto migliorata.
+        Sign in to access an enhanced shopping experience.
       </p>
       <form className="w-full" action={formAction}>
         <div className="flex flex-col w-full gap-y-2">
@@ -40,16 +40,16 @@ const Login = ({ setCurrentView }: Props) => {
           />
         </div>
         <ErrorMessage error={message} data-testid="login-error-message" />
-        <SubmitButton data-testid="sign-in-button" className="w-full mt-6">Registrati</SubmitButton>
+        <SubmitButton data-testid="sign-in-button" className="w-full mt-6">Sign in</SubmitButton>
       </form>
       <span className="text-center text-ui-fg-base text-small-regular mt-6">
-        Non sei registrato?{" "}
+        Not a member?{" "}
         <button
           onClick={() => setCurrentView(LOGIN_VIEW.REGISTER)}
           className="underline"
           data-testid="register-button"
         >
-          Unisciti a noi
+          Join us
         </button>
         .
       </span>
