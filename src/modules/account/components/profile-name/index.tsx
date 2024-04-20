@@ -41,7 +41,7 @@ const ProfileName: React.FC<MyInformationProps> = ({ customer }) => {
       >
         <div className="grid grid-cols-2 gap-x-4">
           <Input
-            label="First name"
+            label="Nome"
             name="first_name"
             required
             defaultValue={customer.first_name}

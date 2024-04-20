@@ -182,7 +182,7 @@ const Payment = ({
               disabled={(isStripe && !cardComplete) || !cart.payment_session}
               data-testid="submit-payment-button"
             >
-              Continue to review
+              Continua col riassunto
             </Button>
           </div>
         ) : (
@@ -196,7 +196,7 @@ const Payment = ({
             <div className="flex items-start gap-x-1 w-full">
               <div className="flex flex-col w-1/3">
                 <Text className="txt-medium-plus text-ui-fg-base mb-1">
-                  Payment method
+                  Metodo di pagamento
                 </Text>
                 <Text className="txt-medium text-ui-fg-subtle" data-testid="payment-method-summary">
                   {paymentInfoMap[cart.payment_session.provider_id]?.title ||
@@ -212,7 +212,7 @@ const Payment = ({
               </div>
               <div className="flex flex-col w-1/3">
                 <Text className="txt-medium-plus text-ui-fg-base mb-1">
-                  Payment details
+                  Dettagli pagamento
                 </Text>
                 <div className="flex gap-2 txt-medium text-ui-fg-subtle items-center" data-testid="payment-details-summary">
                   <Container className="flex items-center h-7 w-fit p-2 bg-ui-button-neutral-hover">

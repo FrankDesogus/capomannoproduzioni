@@ -52,7 +52,7 @@ const BillingAddress = ({
     <>
       <div className="grid grid-cols-2 gap-4">
         <Input
-          label="First name"
+          label="Nome"
           name="billing_address.first_name"
           autoComplete="given-name"
           value={formData["billing_address.first_name"]}
