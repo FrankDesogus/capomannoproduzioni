@@ -84,7 +84,7 @@ const Overview = ({ customer, orders }: OverviewProps) => {
                             </div>
                             <button className="flex items-center justify-between" data-testid="open-order-button">
                               <span className="sr-only">
-                                Vai all'ordine #{order.display_id}
+                                Vedi ordine #{order.display_id}
                               </span>
                               <ChevronDown className="-rotate-90" />
                             </button>
