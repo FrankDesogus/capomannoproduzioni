@@ -42,7 +42,7 @@ const Review = ({
               <Text className="txt-medium-plus text-ui-fg-base mb-1">
                 Cliccando sul pulsante Ordina, confermi di aver letto, compreso e 
                 accettato i nostri Termini di Utilizzo, Termini di Vendita e Politica
-                di Reso e riconosci di aver letto l'Informativa sulla Privacy di 
+                di Reso e riconosci di aver letto l&apos;Informativa sulla Privacy di 
                 Orientando Capo Mannu.
               </Text>
             </div>
