@@ -144,7 +144,7 @@ const Addresses = ({
 
                     {sameAsSBilling ? (
                       <Text className="txt-medium text-ui-fg-subtle">
-                        L'indirizzo di fatturazione e per la spedizione sono lo stesso.
+                        L&apos;indirizzo di fatturazione e per la spedizione sono lo stesso.
                       </Text>
                     ) : (
                       <>
