@@ -112,7 +112,7 @@ const Payment = ({
             }
           )}
         >
-          Payment
+          Pagamento
           {!isOpen && paymentReady && <CheckCircleSolid />}
         </Heading>
         {!isOpen && paymentReady && (
@@ -122,7 +122,7 @@ const Payment = ({
               className="text-ui-fg-interactive hover:text-ui-fg-interactive-hover"
               data-testid="edit-payment-button"
             >
-              Edit
+              Modifica
             </button>
           </Text>
         )}
@@ -155,7 +155,7 @@ const Payment = ({
             {isStripe && stripeReady && (
               <div className="mt-5 transition-all duration-150 ease-in-out">
                 <Text className="txt-medium-plus text-ui-fg-base mb-1">
-                  Enter your card details:
+                  Immetti i dettagli della tua carta:
                 </Text>
 
                 <CardElement
