@@ -94,7 +94,7 @@ const Overview = ({ customer, orders }: OverviewProps) => {
                     )
                   })
                 ) : (
-                  <span data-testid="no-orders-message">Non ci sono ordini recenti</span>
+                  <span data-testid="no-orders-message">No recent orders</span>
                 )}
               </ul>
             </div>
