@@ -11,10 +11,9 @@ import CountrySelect from "../country-select"
 
 const SideMenuItems = {
   Home: "/",
-  Store: "/store",
-  Search: "/search",
+  Negozio: "/store",
   Account: "/account",
-  Cart: "/cart",
+  Carrello: "/cart",
 }
 
 const SideMenu = ({ regions }: { regions: Region[] | null }) => {
