@@ -16,14 +16,14 @@ const OrderDetails = ({ order, showStatus }: OrderDetailsProps) => {
   return (
     <div>
       <Text>
-        Abbiamo inviato i dettagli della conferma dell'ordine a {" "}
+        Abbiamo inviato i dettagli della conferma dell&apos;ordine a {" "}
         <span className="text-ui-fg-medium-plus font-semibold" data-testid="order-email">
           {order.email}
         </span>
         .
       </Text>
       <Text className="mt-2">
-        Data dell'ordine: <span data-testid="order-date">{new Date(order.created_at).toDateString()}</span>
+        Data dell&apos;ordine: <span data-testid="order-date">{new Date(order.created_at).toDateString()}</span>
       </Text>
       <Text className="mt-2 text-ui-fg-interactive">
         Numero ordine: <span data-testid="order-id">{order.display_id}</span>
@@ -39,7 +39,7 @@ const OrderDetails = ({ order, showStatus }: OrderDetailsProps) => {
               </span>
             </Text>
             <Text>
-              Payment status:{" "}
+              Status del pagamento:{" "}
               <span className="text-ui-fg-subtle " sata-testid="order-payment-status">
                 {formatStatus(order.payment_status)}
               </span>
