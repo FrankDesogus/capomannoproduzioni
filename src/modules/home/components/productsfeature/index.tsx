@@ -113,7 +113,7 @@ const ProductsFeature = () => {
                                             }}
                                         />
                                         <div className="absolute w-full h-full left-0 right-0 top-0 bottom-0 bg-black bg-opacity-50 text-white p-2 opacity-0 hover:opacity-100 transition duration-300 text-2xl small:text-3xl">
-                                            <h1 className="mt-4 small:mt-16">Collezione "Gioielli Etnici e Sardi in Argento"</h1>
+                                            <h1 className="mt-4 small:mt-16">Collezione Gioielli Etnici e Sardi in Argento</h1>
                                             <p className="mt-16 text-xl invisible small:visible">Esplora la collezione di gioielli etnici e sardi in argento, un mix affascinante di tradizione e modernità. Ogni pezzo, dalle fedine ai braccialetti, rappresenta un&apos;eleganza senza tempo e un&apos;abilità artigianale unica, perfetta per qualsiasi occasione..</p>
                                         </div>
                                     </div>
@@ -130,7 +130,7 @@ const ProductsFeature = () => {
                                             }}
                                         />
                                         <div className="absolute w-full h-full left-0 right-0 top-0 bottom-0 bg-black bg-opacity-50 text-white p-2 opacity-0 hover:opacity-100 transition duration-300 text-2xl small:text-3xl">
-                                            <h1 className="mt-4">Collezione "Tegua"</h1>
+                                            <h1 className="mt-4">Collezione Tagua</h1>
                                             <p className="mt-16 text-xl invisible small:visible">Scopri la nostra esclusiva collezione di accessori e gioielli realizzati in tagua, una preziosa e sostenibile alternativa all&apos;avorio animale. Ogni pezzo è un&apos;opera d&apos;arte unica, intagliata a mano con maestria artigianale e arricchita da sfumature naturali e dettagli intricati.</p>
                                         </div>
                                     </div>
@@ -143,7 +143,7 @@ const ProductsFeature = () => {
                     </div>
                 </div>
                 <h1 className="text-3xl text-gray-600 text-center py-16 w-3/4 items-center justify-center mx-auto">
-                    "Lo stile classico si fonde armoniosamente con l&apos;essenza del mare e dell&apos;ambiente, creando un look senza tempo e responsabile."</h1>
+                    Lo stile classico si fonde armoniosamente con l&apos;essenza del mare e dell&apos;ambiente, creando un look senza tempo e responsabile.</h1>
 
 
                 <div className="content-container">
