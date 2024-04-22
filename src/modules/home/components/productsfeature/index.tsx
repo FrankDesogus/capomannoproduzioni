@@ -64,10 +64,10 @@ const ProductsFeature = () => {
                     <div className="max-w-6xl px-4 relative z-10">
                         {/* Contenuto della sezione */}
                         <h1 className="text-3xl text-white text-center">
-                            "Esprimiamo il nostro impegno verso la sostenibilità in ogni filo del tessuto."</h1>
-                        <p className="text-l text-white text-center">"Ogni capo nasce da una selezione accurata di cotone
+                            Esprimiamo il nostro impegno verso la sostenibilità in ogni filo del tessuto.</h1>
+                        <p className="text-l text-white text-center">Ogni capo nasce da una selezione accurata di cotone
                             proveniente esclusivamente da fonti certificate, garantendo non solo la qualità del materiale
-                            ma anche il rispetto per l'ambiente e per chi lo coltiva."</p>
+                            ma anche il rispetto per l&apos;ambiente e per chi lo coltiva.</p>
                         <p className="text-3xl text-white pt-8 text-center">Ci impegniamo a creare non solo capi di abbigliamento, ma veri e propri eredi di stile destinati a tramandarsi di generazione in generazione.</p>
                         <p className="text-l text-white text-center"> Le nostre linee, caratterizzate da un design semplice e senza tempo, sono realizzate con materiali di altissima qualità, pensati per resistere al trascorrere del tempo senza perdere il loro fascino.Ogni confezione è curata nei minimi dettagli, conferendo un tocco di eleganza e raffinatezza che trascende le mode del momento. Scegliere i nostri prodotti significa investire in pezzi unici che diventeranno parte integrante della tua storia familiare, testimoniando il valore della sostenibilità e della durata nel tempo.</p>
                     </div>
@@ -95,7 +95,7 @@ const ProductsFeature = () => {
                                         }}
                                     />
                                     <div className="absolute w-full h-full left-0 right-0 top-0 bottom-0 bg-black bg-opacity-50 text-white p-2 opacity-0 hover:opacity-100 transition duration-300 text-2xl small:text-3xl">
-                                        <h1 className="mt-16">Collezione "Ambra Terapeutica del Baltico":</h1>
+                                        <h1 className="mt-16">Collezione Ambra Terapeutica del Baltico:</h1>
                                         <p className="mt-16 text-xl invisible small:visible">Scopri il potere curativo e l'eleganza senza tempo dell'ambra terapeutica del Baltico, una pietra preziosa amata da secoli per le sue proprietà terapeutiche e la sua bellezza naturale. Ogni gioiello è un tributo alla madre natura, con pezzi unici che catturano la calda tonalità dell'ambra e la sua aura di benessere. Dalle collane agli orecchini, ogni gioiello è progettato per portare comfort e armonia, aggiungendo un tocco di lusso e bellezza al tuo stile quotidiano. Indossa l'ambra del Baltico con orgoglio, abbracciando la sua storia millenaria e i suoi benefici per il corpo e lo spirito.</p>
                                     </div>
 
