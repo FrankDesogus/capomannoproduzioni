@@ -62,7 +62,7 @@ const Carousel = () => {
                     <h1 className="text-2xl-semi mb-4 drop-shadow-md shadow-black text-right ml-auto uppercase">
                         {images[currentImageIndex].title}
                     </h1>
-                    <p className="text-base-regular max-w-[32rem] mb-6 drop-shadow-md shadow-black text-right">
+                    <p className="text-base-regular max-w-[32rem] mb-6 drop-shadow-md shadow-black text-right ml-auto">
                         {images[currentImageIndex].description}
 
                     </p>
