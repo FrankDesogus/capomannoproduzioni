@@ -58,11 +58,11 @@ const ProductsFeature = () => {
                         </div>
                     </div>
                 </div>
-                {/*
-                <div className="relative bg-cover bg-center py-16 flex items-end justify-center mb-16" style={{ backgroundImage: 'url("/GangstaClaudia.jpg")' }}>
-                    <div className="absolute inset-0 bg-gray-900 opacity-50"></div>
+
+                <div className="relative py-16 flex items-end justify-center mb-16">
+                    <Image src={'https://mic-medusademo-tq9pqli72b-orientando-5-mediabucket-cexuvpvnsfar.s3.eu-central-1.amazonaws.com/GangstaClaudia.jpg'} alt="Image" layout="fill" objectFit="cover" />                    <div className="absolute inset-0 bg-gray-900 opacity-50"></div>
                     <div className="max-w-6xl px-4 relative z-10">
-                        {/* Contenuto della sezione 
+                        {/* Contenuto della sezione */}
                         <h1 className="text-3xl text-white text-center">
                             "Esprimiamo il nostro impegno verso la sostenibilità in ogni filo del tessuto."</h1>
                         <p className="text-l text-white text-center">"Ogni capo nasce da una selezione accurata di cotone
@@ -84,7 +84,7 @@ const ProductsFeature = () => {
                             <div className="grid grid-cols-2 gap-4">
                                 <div className="col-span-1 relative w-full h-full aspect-[2/3]">
                                     <Image
-                                        src="/Ambra2.jpg"
+                                        src={'https://mic-medusademo-tq9pqli72b-orientando-5-mediabucket-cexuvpvnsfar.s3.eu-central-1.amazonaws.com/Ambra2-1713523990768.jpg'}
                                         alt=""
                                         className="absolute inset-0"
                                         fill
@@ -103,7 +103,7 @@ const ProductsFeature = () => {
                                 <div className="flex flex-col justify-between">
                                     <div className="col-span-1 relative w-full h-full aspect-[3/2]">
                                         <Image
-                                            src="/Argento 2.jpg"
+                                            src={'https://mic-medusademo-tq9pqli72b-orientando-5-mediabucket-cexuvpvnsfar.s3.eu-central-1.amazonaws.com/Argento+2-1713512798911.jpg'}
                                             alt=""
                                             className="absolute inset-0"
                                             fill
@@ -120,7 +120,7 @@ const ProductsFeature = () => {
 
                                     <div className="col-span-1 relative w-full aspect-square small:w-[100%] small:aspect-[3/2]">
                                         <Image
-                                            src="/Tagua5.jpg"
+                                            src={'https://mic-medusademo-tq9pqli72b-orientando-5-mediabucket-cexuvpvnsfar.s3.eu-central-1.amazonaws.com/Tagua5.jpg'}
                                             alt=""
                                             className="absolute inset-0"
                                             fill
@@ -156,7 +156,7 @@ const ProductsFeature = () => {
                             <li className="column mt-8">
                                 <div className="h-[50vh] w-full relative mt-8">
 
-                                    <Image src="/Claudia:treccine.JPEG"
+                                    <Image src={'https://mic-medusademo-tq9pqli72b-orientando-5-mediabucket-cexuvpvnsfar.s3.eu-central-1.amazonaws.com/Claudia%3Atreccine.JPEG'}
                                         loading="eager"
                                         priority={true}
                                         quality={90}
@@ -187,7 +187,7 @@ const ProductsFeature = () => {
                                 </div>
                                 <div className="h-[50vh] w-full relative">
 
-                                    <Image src="/IMG_4864_jpg.JPG"
+                                    <Image src={'https://mic-medusademo-tq9pqli72b-orientando-5-mediabucket-cexuvpvnsfar.s3.eu-central-1.amazonaws.com/IMG_4864_jpg.JPG'}
                                         loading="eager"
                                         priority={true}
                                         quality={90}
@@ -206,7 +206,7 @@ const ProductsFeature = () => {
                             <li className="column">
                                 <div className="h-[50vh] w-full relative">
 
-                                    <Image src="/IMG_4019_jpg.png"
+                                    <Image src={'https://mic-medusademo-tq9pqli72b-orientando-5-mediabucket-cexuvpvnsfar.s3.eu-central-1.amazonaws.com/IMG_4019_jpg.png'}
                                         loading="eager"
                                         priority={true}
                                         quality={90}
@@ -232,7 +232,7 @@ const ProductsFeature = () => {
                             <li className="column">
                                 <div className="h-[50vh] w-full relative mt-16">
 
-                                    <Image src="/IMG_4137_jpg.JPG"
+                                    <Image src={'https://mic-medusademo-tq9pqli72b-orientando-5-mediabucket-cexuvpvnsfar.s3.eu-central-1.amazonaws.com/IMG_4137_jpg.JPG'}
                                         loading="eager"
                                         priority={true}
                                         quality={90}
@@ -263,7 +263,6 @@ const ProductsFeature = () => {
                         </ul>
                     </div>
                 </div>
-                */}
             </div>
 
 
