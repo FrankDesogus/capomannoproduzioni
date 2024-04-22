@@ -96,7 +96,7 @@ const ProductsFeature = () => {
                                     />
                                     <div className="absolute w-full h-full left-0 right-0 top-0 bottom-0 bg-black bg-opacity-50 text-white p-2 opacity-0 hover:opacity-100 transition duration-300 text-2xl small:text-3xl">
                                         <h1 className="mt-16">Collezione Ambra Terapeutica del Baltico:</h1>
-                                        <p className="mt-16 text-xl invisible small:visible">Scopri il potere curativo e l'eleganza senza tempo dell'ambra terapeutica del Baltico, una pietra preziosa amata da secoli per le sue proprietà terapeutiche e la sua bellezza naturale. Ogni gioiello è un tributo alla madre natura, con pezzi unici che catturano la calda tonalità dell'ambra e la sua aura di benessere. Dalle collane agli orecchini, ogni gioiello è progettato per portare comfort e armonia, aggiungendo un tocco di lusso e bellezza al tuo stile quotidiano. Indossa l'ambra del Baltico con orgoglio, abbracciando la sua storia millenaria e i suoi benefici per il corpo e lo spirito.</p>
+                                        <p className="mt-16 text-xl invisible small:visible">Scopri il potere curativo e l&apos;eleganza senza tempo dell&apos;ambra terapeutica del Baltico, una pietra preziosa amata da secoli per le sue proprietà terapeutiche e la sua bellezza naturale. Ogni gioiello è un tributo alla madre natura, con pezzi unici che catturano la calda tonalità dell&apos;ambra e la sua aura di benessere. Dalle collane agli orecchini, ogni gioiello è progettato per portare comfort e armonia, aggiungendo un tocco di lusso e bellezza al tuo stile quotidiano. Indossa l&apos;ambra del Baltico con orgoglio, abbracciando la sua storia millenaria e i suoi benefici per il corpo e lo spirito.</p>
                                     </div>
 
                                 </div>
@@ -114,7 +114,7 @@ const ProductsFeature = () => {
                                         />
                                         <div className="absolute w-full h-full left-0 right-0 top-0 bottom-0 bg-black bg-opacity-50 text-white p-2 opacity-0 hover:opacity-100 transition duration-300 text-2xl small:text-3xl">
                                             <h1 className="mt-4 small:mt-16">Collezione "Gioielli Etnici e Sardi in Argento"</h1>
-                                            <p className="mt-16 text-xl invisible small:visible">Esplora la collezione di gioielli etnici e sardi in argento, un mix affascinante di tradizione e modernità. Ogni pezzo, dalle fedine ai braccialetti, rappresenta un'eleganza senza tempo e un'abilità artigianale unica, perfetta per qualsiasi occasione..</p>
+                                            <p className="mt-16 text-xl invisible small:visible">Esplora la collezione di gioielli etnici e sardi in argento, un mix affascinante di tradizione e modernità. Ogni pezzo, dalle fedine ai braccialetti, rappresenta un&apos;eleganza senza tempo e un&apos;abilità artigianale unica, perfetta per qualsiasi occasione..</p>
                                         </div>
                                     </div>
 
@@ -131,7 +131,7 @@ const ProductsFeature = () => {
                                         />
                                         <div className="absolute w-full h-full left-0 right-0 top-0 bottom-0 bg-black bg-opacity-50 text-white p-2 opacity-0 hover:opacity-100 transition duration-300 text-2xl small:text-3xl">
                                             <h1 className="mt-4">Collezione "Tegua"</h1>
-                                            <p className="mt-16 text-xl invisible small:visible">Scopri la nostra esclusiva collezione di accessori e gioielli realizzati in tagua, una preziosa e sostenibile alternativa all'avorio animale. Ogni pezzo è un'opera d'arte unica, intagliata a mano con maestria artigianale e arricchita da sfumature naturali e dettagli intricati.</p>
+                                            <p className="mt-16 text-xl invisible small:visible">Scopri la nostra esclusiva collezione di accessori e gioielli realizzati in tagua, una preziosa e sostenibile alternativa all&apos;avorio animale. Ogni pezzo è un&apos;opera d&apos;arte unica, intagliata a mano con maestria artigianale e arricchita da sfumature naturali e dettagli intricati.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -143,7 +143,7 @@ const ProductsFeature = () => {
                     </div>
                 </div>
                 <h1 className="text-3xl text-gray-600 text-center py-16 w-3/4 items-center justify-center mx-auto">
-                    "Lo stile classico si fonde armoniosamente con l'essenza del mare e dell'ambiente, creando un look senza tempo e responsabile."</h1>
+                    "Lo stile classico si fonde armoniosamente con l&apos;essenza del mare e dell&apos;ambiente, creando un look senza tempo e responsabile."</h1>
 
 
                 <div className="content-container">
