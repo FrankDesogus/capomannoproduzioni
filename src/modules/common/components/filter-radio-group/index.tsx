@@ -45,7 +45,6 @@ const FilterRadioGroup = ({
               value={i.value}
             />
             <Label
-              placeholder={i.label}
               htmlFor={i.value}
               className={clx(
                 "!txt-compact-small !transform-none text-ui-fg-subtle hover:cursor-pointer",
@@ -56,8 +55,9 @@ const FilterRadioGroup = ({
               data-testid="radio-label"
               data-active={i.value === value}
             >
-              {i.label}
+              {i.label} {/* Testo del label */}
             </Label>
+
           </div>
         ))}
       </RadioGroup>
