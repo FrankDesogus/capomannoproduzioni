@@ -124,7 +124,7 @@ export default function ProductActions({
 
     setIsAdding(false)
   }
-
+const handlenothing = () => {}
   return (
     <>
       <div className="flex flex-col gap-y-2" ref={actionsRef}>
@@ -178,6 +178,16 @@ export default function ProductActions({
           show={!inView}
           optionsDisabled={!!disabled || isAdding}
         />
+        <Button
+          onClick={handlenothing}
+          disabled={!inStock || !variant || !!disabled || isAdding}
+          variant="primary"
+          className="w-full h-10"
+          isLoading={isAdding}
+          data-testid="add-product-button"
+        >
+          Guida alle Taglie
+        </Button>
       </div>
     </>
   )
