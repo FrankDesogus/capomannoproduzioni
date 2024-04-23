@@ -14,12 +14,12 @@ export const metadata: Metadata = {
 }
 
 export default async function PageLayout(props: { children: React.ReactNode }) {
-
   return (
     <>
       <Nav />
-      <PasswordProtectedContent children={props.children} />
+      <PasswordProtectedContent>{props.children}</PasswordProtectedContent>
       <Footer />
     </>
-  )
+  );
 }
+

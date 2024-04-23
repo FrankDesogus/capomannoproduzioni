@@ -37,5 +37,5 @@ export default function PasswordProtectedContent({ children }: { children: React
     return <p>Password errata. Riprova.</p>;
   }
 
-  return <>{children}</>;
+  return <>{children}</>; // Renderizza i figli direttamente
 }
