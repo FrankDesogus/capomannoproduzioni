@@ -2,11 +2,11 @@
 
 import { Region } from "@medusajs/medusa"
 import { PricedProduct } from "@medusajs/medusa/dist/types/pricing"
-import { Button, FocusModal, Heading, Input, Label, Text } from "@medusajs/ui"
+import { Button, Heading, Input, Label, Text } from "@medusajs/ui"
 import { isEqual } from "lodash"
 import { useParams } from "next/navigation"
 import { useEffect, useMemo, useRef, useState } from "react"
-
+import FocusModal from "./modal"
 import { useIntersection } from "@lib/hooks/use-in-view"
 import { addToCart } from "@modules/cart/actions"
 import Divider from "@modules/common/components/divider"
@@ -15,6 +15,7 @@ import OptionSelect from "@modules/products/components/option-select"
 import MobileActions from "../mobile-actions"
 import ProductPrice from "../product-price"
 import { TableDemo } from "./taglie-table.tsx"
+import Modal from "@modules/common/components/modal"
 
 type ProductActionsProps = {
   product: PricedProduct
@@ -44,14 +45,14 @@ export default function ProductActions({
   const guidataglieValue = guidataglie?.GuidaAlleTaglie; // Accedi al valore in modo sicuro
 
   let value = NaN; // Valore predefinito se non è possibile convertire
-  
+
   // Verifica se guidataglieValue è definito e se è una stringa
   if (typeof guidataglieValue === 'string' && !isNaN(parseInt(guidataglieValue))) {
     value = parseInt(guidataglieValue); // Converti il valore in un numero intero
   }
-  
+
   console.log(value); // Stampa il valore intero o NaN
-    // initialize the option state
+  // initialize the option state
   useEffect(() => {
     const optionObj: Record<string, string> = {}
 
@@ -149,15 +150,15 @@ export default function ProductActions({
                 const taglie = [{}, {}]
                 return (
                   <div key={option.id}>
-                    
-                      <OptionSelect
-                        option={option}
-                        current={options[option.id]}
-                        updateOption={updateOptions}
-                        title={option.title}
-                        data-testid="product-options"
-                        disabled={!!disabled || isAdding}
-                      />
+
+                    <OptionSelect
+                      option={option}
+                      current={options[option.id]}
+                      updateOption={updateOptions}
+                      title={option.title}
+                      data-testid="product-options"
+                      disabled={!!disabled || isAdding}
+                    />
                   </div>
                 );
               })}
@@ -194,36 +195,14 @@ export default function ProductActions({
           show={!inView}
           optionsDisabled={!!disabled || isAdding}
         />
-      {/* Renderizza <FocusModal> solo se isValidValue è true */}
-      {isValidValue && (
-         <FocusModal>
-          <FocusModal.Trigger asChild>
-
-            <Button>Guida alle Taglie</Button>
-
-          </FocusModal.Trigger>
-          <FocusModal.Content className="w-1/2 ml-auto mt-16 mb-8">
-            <FocusModal.Header className="mr-auto text-2xl">Guida Alle Taglie
-            </FocusModal.Header>
-            <FocusModal.Body className="flex flex-col items-center py-16 ">
-
-              <div className="flex w-full max-w-lg flex-col gap-y-8">
-
-                <div className="flex flex-col gap-y-1">
-
-                  <Heading>tabella delle taglie</Heading>
-
-
-
-                </div>
-                  <TableDemo guidataglie={value}/>
-
-              </div>
-
-            </FocusModal.Body>
-          </FocusModal.Content>
-        </FocusModal>
-      )}
+        {/* Renderizza <FocusModal> solo se isValidValue è true */}
+        {isValidValue && (
+          <FocusModal>
+            <div>
+              <TableDemo guidataglie={1} />
+            </div>
+          </FocusModal>
+        )}
       </div>
     </>
   )
