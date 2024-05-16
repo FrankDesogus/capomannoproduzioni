@@ -45,7 +45,7 @@ export default function ProductActions({
   const guidataglieValue = guidataglie?.GuidaAlleTaglie; // Accedi al valore in modo sicuro
 
   let value = NaN; // Valore predefinito se non è possibile convertire
-  
+
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const openModal = () => {
@@ -208,13 +208,15 @@ export default function ProductActions({
         {/* Renderizza <FocusModal> solo se isValidValue è true */}
         {isValidValue && (
           <>
-          <button onClick={openModal} className="bg-blue-500 text-white font-semibold py-2 px-4 rounded">Open Modal</button>
-          <Modal isOpen={isModalOpen} close={function (): void {
-              throw new Error("Function not implemented.")
-            } } children={<TableDemo guidataglie={1} />}>
-            
-          </Modal>
-        </>
+            <button onClick={openModal} className="bg-blue-500 text-white font-semibold py-2 px-4 rounded">Guida Alle Taglie</button>
+            <Modal isOpen={isModalOpen} close={closeModal}>
+              <>
+                <TableDemo guidataglie={1} />
+                <Button onClick={closeModal} className="ml-auto">Chiudi</Button>
+              </>
+            </Modal>
+
+          </>
         )}
       </div>
     </>
