@@ -208,7 +208,7 @@ export default function ProductActions({
         {/* Renderizza <FocusModal> solo se isValidValue è true */}
         {isValidValue && (
           <>
-            <button onClick={openModal} className="bg-blue-500 text-white font-semibold py-2 px-4 rounded">Guida Alle Taglie</button>
+            <Button onClick={openModal} className="bg-blue-500 text-white font-semibold py-2 px-4 rounded">Guida Alle Taglie</Button>
             <Modal isOpen={isModalOpen} close={closeModal}>
               <>
                 <TableDemo guidataglie={1} />
