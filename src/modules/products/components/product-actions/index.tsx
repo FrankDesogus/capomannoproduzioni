@@ -197,7 +197,7 @@ export default function ProductActions({
       {/* Renderizza <FocusModal> solo se isValidValue è true */}
       {isValidValue && (
          <FocusModal>
-          <FocusModal.Trigger>
+          <FocusModal.Trigger asChild>
 
             <Button>Guida alle Taglie</Button>
 
