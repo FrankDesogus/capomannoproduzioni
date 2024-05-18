@@ -282,15 +282,21 @@ const fakeData6: Order[] = [
 
 ]
 export function TableDemo(props: TableDemoProps) {
-    
+    console.log(props.guidataglie)
     let tempdata = fakeData1
     if(props.guidataglie === 1){
+        console.log(props.guidataglie)
+
         tempdata = fakeData1
 
     }else if (props.guidataglie ===2){
+        console.log(props.guidataglie)
+
         tempdata = fakeData2
 
     }else if (props.guidataglie ===3){
+        console.log(props.guidataglie)
+
         tempdata = fakeData3
 
     }else if (props.guidataglie ===4){

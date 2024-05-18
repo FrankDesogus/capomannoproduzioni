@@ -211,7 +211,7 @@ export default function ProductActions({
             <Button onClick={openModal} className="bg-blue-500 text-white font-semibold py-2 px-4 rounded">Guida Alle Taglie</Button>
             <Modal isOpen={isModalOpen} close={closeModal}>
               <>
-                <TableDemo guidataglie={1} />
+                <TableDemo guidataglie={value} />
                 <Button onClick={closeModal} className="ml-auto">Chiudi</Button>
               </>
             </Modal>
