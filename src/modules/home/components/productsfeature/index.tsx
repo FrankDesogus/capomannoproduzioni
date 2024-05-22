@@ -16,9 +16,9 @@ const ProductsFeature = () => {
                                 <Image src={'https://mic-medusademo-tq9pqli72b-orientando-5-mediabucket-cexuvpvnsfar.s3.eu-central-1.amazonaws.com/durability.png'} alt="Image" width={100} height={100} />
                             </div>
                             {/* Text Section (3/4 width) */}
-                            <div className="col-span-3 flex items-center justify-start">
+                            <div className="col-span-3 flex items-center justify-center">
                                 <span className="text-lg-regular text-black max-w-lg uppercase my-4">
-                                    Resistenza Garantita ,stile senza compromessi.
+                                    Resistenza e comfort garantiti.
                                 </span>
                             </div>
                         </div>
@@ -33,9 +33,9 @@ const ProductsFeature = () => {
                                     alt="Image" width={100} height={100} />
                             </div>
                             {/* Text Section (3/4 width) */}
-                            <div className="col-span-3 flex items-center justify-start">
+                            <div className="col-span-3 flex items-center justify-center">
                                 <span className="text-lg-regular text-black max-w-lg uppercase my-4">
-                                    Moda che non teme il tempo, stile senza confini.
+                                    Capi senza tempo.
                                 </span>
                             </div>
                         </div>
@@ -50,9 +50,9 @@ const ProductsFeature = () => {
                                     alt="Image" width={100} height={100} />
                             </div>
                             {/* Text Section (3/4 width) */}
-                            <div className="col-span-3 flex items-center justify-start">
+                            <div className="col-span-3 flex items-center justify-center">
                                 <span className="text-lg-regular text-black max-w-lg uppercase my-4">
-                                    Eleganza eco-friendly con il nostro cotone sostenibile.
+                                    otone 100% organico.
                                 </span>
                             </div>
                         </div>
@@ -60,16 +60,14 @@ const ProductsFeature = () => {
                 </div>
 
                 <div className="relative py-16 flex items-end justify-center mb-16">
-                    <Image src={'https://mic-medusademo-tq9pqli72b-orientando-5-mediabucket-cexuvpvnsfar.s3.eu-central-1.amazonaws.com/GangstaClaudia.jpg'} alt="Image" layout="fill" objectFit="cover" />                    <div className="absolute inset-0 bg-gray-900 opacity-50"></div>
-                    <div className="max-w-6xl px-4 relative z-10">
+                    <Image src={'https://mic-medusademo-tq9pqli72b-orientando-5-mediabucket-cexuvpvnsfar.s3.eu-central-1.amazonaws.com/GangstaClaudia.jpg'} alt="Image" layout="fill" objectFit="cover" />
+                    <div className="absolute inset-0 bg-gray-900 opacity-5">
+                    </div>
+                    <div className="max-w-6xl px-4 relative z-10 w-1/2 bg-white bg-opacity-80 ml-auto mr-8">
                         {/* Contenuto della sezione */}
-                        <h1 className="text-3xl text-white text-center">
-                            Esprimiamo il nostro impegno verso la sostenibilità in ogni filo del tessuto.</h1>
-                        <p className="text-l text-white text-center">Ogni capo nasce da una selezione accurata di cotone
-                            proveniente esclusivamente da fonti certificate, garantendo non solo la qualità del materiale
-                            ma anche il rispetto per l&apos;ambiente e per chi lo coltiva.</p>
-                        <p className="text-3xl text-white pt-8 text-center">Ci impegniamo a creare non solo capi di abbigliamento, ma veri e propri eredi di stile destinati a tramandarsi di generazione in generazione.</p>
-                        <p className="text-l text-white text-center"> Le nostre linee, caratterizzate da un design semplice e senza tempo, sono realizzate con materiali di altissima qualità, pensati per resistere al trascorrere del tempo senza perdere il loro fascino.Ogni confezione è curata nei minimi dettagli, conferendo un tocco di eleganza e raffinatezza che trascende le mode del momento. Scegliere i nostri prodotti significa investire in pezzi unici che diventeranno parte integrante della tua storia familiare, testimoniando il valore della sostenibilità e della durata nel tempo.</p>
+                        <h1 className="text-4xl text-black text-center py-8 font-extrabold">
+                            Non un semplice brand ma una filosofia di vita.</h1>
+                        <p className="text-xl text-black text-center py-8 font-extrabold">Passione per il mare e attenzione per i materiali si fondono dando la vita a capi unici, curati nei minimi dettagli e pensati per accompagnarti nel tempo.</p>
                     </div>
                 </div>
                 <h1 className="text-black text-5xl small:text-8xl justify-center text-center mx-auto w-full uppercase my-12">BIJOUX e ACCESSORI </h1>
@@ -142,8 +140,8 @@ const ProductsFeature = () => {
 
                     </div>
                 </div>
-                <h1 className="text-3xl text-gray-600 text-center py-16 w-3/4 items-center justify-center mx-auto">
-                    Lo stile classico si fonde armoniosamente con l&apos;essenza del mare e dell&apos;ambiente, creando un look senza tempo e responsabile.</h1>
+                <h1 className="text-3xl text-gray-600 text-center py-16 w-3/4 items-center justify-center mx-auto font-extrabold">
+                    Diversi look per diverse stagioni e stili. Tutto in un unico Shop</h1>
 
 
                 <div className="content-container">
@@ -172,8 +170,8 @@ const ProductsFeature = () => {
                                 <div className="flex flex-col items-center text-center mt-8">
                                     <span className="text-base-regular text-gray-600">
                                     </span>
-                                    <p className="text-xl-regular text-gray-900 max-w-lg uppercase">
-                                        Fresh Fashion
+                                    <p className="text-xl-regular text-gray-900 max-w-lg uppercase font-extrabold">
+                                        Street style
                                     </p>
                                 </div>
                             </li>
@@ -181,8 +179,8 @@ const ProductsFeature = () => {
                                 <div className="flex flex-col items-center text-center mb-8">
                                     <span className="text-base-regular text-gray-600">
                                     </span>
-                                    <p className="text-xl-regular text-gray-900 max-w-lg uppercase">
-                                        Caldo e Resistente
+                                    <p className="text-xl-regular text-gray-900 max-w-lg uppercase font-extrabold">
+                                        Classic & Sporty
                                     </p>
                                 </div>
                                 <div className="h-[50vh] w-full relative">
@@ -224,8 +222,8 @@ const ProductsFeature = () => {
                                 <div className="flex flex-col items-center text-center mb-16">
                                     <span className="text-base-regular text-gray-600 mb-6">
                                     </span>
-                                    <p className="text-xl-regular text-gray-900 max-w-lg mb-4 uppercase">
-                                        Colorato
+                                    <p className="text-xl-regular text-gray-900 max-w-lg mb-4 uppercase font-extrabold">
+                                        Ethnic wear
                                     </p>
                                 </div>
                             </li>
@@ -251,8 +249,8 @@ const ProductsFeature = () => {
                                 <div className="flex flex-col items-center text-center mb-16">
                                     <span className="text-base-regular text-gray-600 mb-6">
                                     </span>
-                                    <p className="text-xl-regular text-gray-900 max-w-lg mb-4 uppercase">
-                                        Sempre in Viaggio
+                                    <p className="text-xl-regular text-gray-900 max-w-lg mb-4 uppercase font-extrabold">
+                                        Colorful accessories
                                     </p>
                                 </div>
                             </li>
