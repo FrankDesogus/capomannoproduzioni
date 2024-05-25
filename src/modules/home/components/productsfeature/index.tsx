@@ -52,7 +52,7 @@ const ProductsFeature = () => {
                             {/* Text Section (3/4 width) */}
                             <div className="col-span-3 flex items-center justify-center">
                                 <span className="text-lg-regular text-black max-w-lg uppercase my-4">
-                                    otone 100% organico.
+                                    Cotone 100% organico.
                                 </span>
                             </div>
                         </div>
@@ -67,7 +67,7 @@ const ProductsFeature = () => {
                         {/* Contenuto della sezione */}
                         <h1 className="text-4xl text-black text-center py-8 font-extrabold">
                             Non un semplice brand ma una filosofia di vita.</h1>
-                        <p className="text-xl text-black text-center py-8 font-extrabold">Passione per il mare e attenzione per i materiali si fondono dando la vita a capi unici, curati nei minimi dettagli e pensati per accompagnarti nel tempo.</p>
+                        <p className="text-xl text-black text-center py-8 font-extrabold">Passione per il mare e attenzione per i materiali si fondono dando vita a capi unici, curati nei minimi dettagli e pensati per accompagnarti nel tempo.</p>
                     </div>
                 </div>
                 <h1 className="text-black text-5xl small:text-8xl justify-center text-center mx-auto w-full uppercase my-12">BIJOUX e ACCESSORI </h1>
@@ -93,7 +93,7 @@ const ProductsFeature = () => {
                                         }}
                                     />
                                     <div className="absolute w-full h-full left-0 right-0 top-0 bottom-0 bg-black bg-opacity-50 text-white p-2 opacity-0 hover:opacity-100 transition duration-300 text-2xl small:text-3xl">
-                                        <h1 className="mt-16">Collezione Ambra Terapeutica del Baltico:</h1>
+                                        <h1 className="mt-16">Ambra Terapeutica del Baltico:</h1>
                                         <p className="mt-16 text-xl invisible small:visible">Scopri il potere curativo e l&apos;eleganza senza tempo dell&apos;ambra terapeutica del Baltico, una pietra preziosa amata da secoli per le sue proprietà terapeutiche e la sua bellezza naturale. Ogni gioiello è un tributo alla madre natura, con pezzi unici che catturano la calda tonalità dell&apos;ambra e la sua aura di benessere. Dalle collane agli orecchini, ogni gioiello è progettato per portare comfort e armonia, aggiungendo un tocco di lusso e bellezza al tuo stile quotidiano. Indossa l&apos;ambra del Baltico con orgoglio, abbracciando la sua storia millenaria e i suoi benefici per il corpo e lo spirito.</p>
                                     </div>
 
@@ -111,7 +111,7 @@ const ProductsFeature = () => {
                                             }}
                                         />
                                         <div className="absolute w-full h-full left-0 right-0 top-0 bottom-0 bg-black bg-opacity-50 text-white p-2 opacity-0 hover:opacity-100 transition duration-300 text-2xl small:text-3xl">
-                                            <h1 className="mt-4 small:mt-16">Collezione Gioielli Etnici e Sardi in Argento</h1>
+                                            <h1 className="mt-4 small:mt-16">Gioielli Etnici e Sardi in Argento</h1>
                                             <p className="mt-16 text-xl invisible small:visible">Esplora la collezione di gioielli etnici e sardi in argento, un mix affascinante di tradizione e modernità. Ogni pezzo, dalle fedine ai braccialetti, rappresenta un&apos;eleganza senza tempo e un&apos;abilità artigianale unica, perfetta per qualsiasi occasione..</p>
                                         </div>
                                     </div>
@@ -128,7 +128,7 @@ const ProductsFeature = () => {
                                             }}
                                         />
                                         <div className="absolute w-full h-full left-0 right-0 top-0 bottom-0 bg-black bg-opacity-50 text-white p-2 opacity-0 hover:opacity-100 transition duration-300 text-2xl small:text-3xl">
-                                            <h1 className="mt-4">Collezione Tagua</h1>
+                                            <h1 className="mt-4">Tagua</h1>
                                             <p className="mt-16 text-xl invisible small:visible">Scopri la nostra esclusiva collezione di accessori e gioielli realizzati in tagua, una preziosa e sostenibile alternativa all&apos;avorio animale. Ogni pezzo è un&apos;opera d&apos;arte unica, intagliata a mano con maestria artigianale e arricchita da sfumature naturali e dettagli intricati.</p>
                                         </div>
                                     </div>

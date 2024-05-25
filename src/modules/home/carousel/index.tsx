@@ -60,7 +60,7 @@ const Carousel = () => {
           objectFit: "cover",
         }}
       />
-            <div className="absolute right-0 lg:right-24 bottom-6 flex justify-center items-center bg-white opacity-75 w-3/4">
+            <div className="absolute right-0 lg:right-24 bottom-6 flex justify-center items-center bg-white bg-opacity-50 w-3/4">
                 <div className="small:px-16 text-stone-700 z-10 flex flex-col justify-center items-center text-center small:text-center small:justify-center small:items-start w-3/4 lg:w-full">
                     <h1 className="text-2xl-semi drop-shadow-md shadow-black text-center ml-auto uppercase py-8">
                         {images[currentImageIndex].title}

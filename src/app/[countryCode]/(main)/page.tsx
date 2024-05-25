@@ -9,7 +9,7 @@ import { cache } from "react"
 import ProductsFeature from "@modules/home/components/productsfeature"
 
 export const metadata: Metadata = {
-  title: "Oreintando Capo Mannu Productions",
+  title: "Orientando Capo Mannu Productions",
   description:
     "Il nuovo e-commerce aggiornato e performante per i nostri prodotti richiestissimi",
 }
