@@ -60,7 +60,7 @@ const Carousel = () => {
           objectFit: "cover",
         }}
       />
-            <div className="absolute right-0 lg:right-24 bottom-6 flex justify-center items-center bg-white bg-opacity-50 w-3/4">
+            <div className="absolute right-0 lg:right-24 bottom-6 flex justify-center items-center bg-white bg-opacity-60 w-1/2">
                 <div className="small:px-16 text-stone-700 z-10 flex flex-col justify-center items-center text-center small:text-center small:justify-center small:items-start w-3/4 lg:w-full">
                     <h1 className="text-2xl-semi drop-shadow-md shadow-black text-center ml-auto uppercase py-8">
                         {images[currentImageIndex].title}
@@ -69,7 +69,7 @@ const Carousel = () => {
                         {images[currentImageIndex].description}
 
                     </p>
-                    <div className="pb-8 small:ml-auto">
+                    <div className="mb-8 px-2 py-2 small:ml-auto bg-blue-600 rounded">
                         <InteractiveLinkHome href="/store">Esplora i nostri prodotti</InteractiveLinkHome>
                     </div>
                 </div>
