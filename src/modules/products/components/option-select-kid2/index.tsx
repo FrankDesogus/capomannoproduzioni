@@ -13,7 +13,7 @@ type OptionSelectProps = {
   "data-testid"?: string
 }
 
-const OptionSelect: React.FC<OptionSelectProps> = ({
+const OptionSelectKid2: React.FC<OptionSelectProps> = ({
   option,
   current,
   updateOption,
@@ -25,7 +25,7 @@ const OptionSelect: React.FC<OptionSelectProps> = ({
 
   // Ordina le opzioni se l'opzione corrente è "Taglia"
   if (option.title === "Taglia") {
-    filteredOptions = ["XS", "S", "M", "L", "XL", "XXL", "3XL", "4XL"]
+    filteredOptions = ["0-1", "1-2", "3-4", "5-6", "7-8", "9-10", "11-12", "13-14"]
   }
 
   // Divide le opzioni in gruppi di 4 per riga
@@ -68,4 +68,4 @@ const OptionSelect: React.FC<OptionSelectProps> = ({
   )
 }
 
-export default OptionSelect
+export default OptionSelectKid2

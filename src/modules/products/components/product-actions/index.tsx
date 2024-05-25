@@ -16,6 +16,12 @@ import MobileActions from "../mobile-actions"
 import ProductPrice from "../product-price"
 import { TableDemo } from "./taglie-table.tsx"
 import Modal from "@modules/common/components/modal"
+import { ProductOption } from "@medusajs/product"
+import OptionSelectKid1 from "../option-select-kid1"
+import OptionSelectKid2 from "../option-select-kid2"
+import {TableDemoKid2 } from "./taglie-table-kid2"
+import {TableDemoKid1 } from "./taglie-table-kid1"
+
 
 type ProductActionsProps = {
   product: PricedProduct
@@ -150,6 +156,19 @@ export default function ProductActions({
 
   const isValidValue = !isNaN(value);
 
+    const renderComponentByValue = (valuez:number) => {
+      if ([1, 2, 3, 4,5,6,7].includes(valuez)) {
+        return <TableDemo guidataglie={valuez} />;
+      } else if ([8, 9].includes(valuez)) {
+        return <TableDemoKid1 guidataglie={valuez} />;
+      } else if ([10,11].includes(valuez)) {
+        return <TableDemoKid2 guidataglie={valuez} />;
+      } else {
+        return null;
+      }}
+    
+
+
   return (
     <>
       <div className="flex flex-col gap-y-2" ref={actionsRef}>
@@ -158,9 +177,11 @@ export default function ProductActions({
             <div className="flex flex-col gap-y-4">
               {(product.options || []).map((option) => {
                 const taglie = [{}, {}]
+                if ([1, 2, 3,4,5,6,7].includes(value)) {
+
                 return (
                   <div key={option.id}>
-
+                    
                     <OptionSelect
                       option={option}
                       current={options[option.id]}
@@ -171,7 +192,42 @@ export default function ProductActions({
                     />
                   </div>
                 );
-              })}
+              }else if([8,9].includes(value)) {
+
+                return (
+                  <div key={option.id}>
+                    
+                    <OptionSelectKid1
+                      option={option}
+                      current={options[option.id]}
+                      updateOption={updateOptions}
+                      title={option.title}
+                      data-testid="product-options"
+                      disabled={!!disabled || isAdding}
+                    />
+                  </div>
+                );
+
+              }
+              else if([10,11].includes(value)) {
+
+                return (
+                  <div key={option.id}>
+                    
+                    <OptionSelectKid2
+                      option={option}
+                      current={options[option.id]}
+                      updateOption={updateOptions}
+                      title={option.title}
+                      data-testid="product-options"
+                      disabled={!!disabled || isAdding}
+                    />
+                  </div>
+                );
+                
+              }
+              }
+              )}
               <Divider />
             </div>
           )}
@@ -211,7 +267,7 @@ export default function ProductActions({
             <Button onClick={openModal} className="bg-blue-500 text-white font-semibold py-2 px-4 rounded">Guida Alle Taglie</Button>
             <Modal isOpen={isModalOpen} close={closeModal}>
               <>
-                <TableDemo guidataglie={value} />
+                  {renderComponentByValue(value)}
                 <Button onClick={closeModal} className="ml-auto">Chiudi</Button>
               </>
             </Modal>

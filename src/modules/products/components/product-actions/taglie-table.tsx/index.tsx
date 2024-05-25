@@ -281,6 +281,42 @@ const fakeData6: Order[] = [
     },
 
 ]
+//  Linea Serafino
+const fakeData7: Order[] = [
+    {
+        i: "IT",
+        s: "48",
+        m: "50",
+        l: "52",
+        xl: "54",
+        xxl: "56",
+        xxxl:"58",
+        xxxxl:"60"
+
+
+    },
+    {
+        i: "Lunghezza complessiva (cm)",
+        s: "66",
+        m: "68",
+        l: "71",
+        xl: "72",
+        xxl: "75",
+        xxxl:"77",
+        xxxxl:"79"
+    },
+    {
+        i: "Lunghezza torace (cm)",
+        s: "49",
+        m: "53",
+        l: "56",
+        xl: "60",
+        xxl: "60",
+        xxxl:"65",
+        xxxxl:"66"
+    },
+
+]
 export function TableDemo(props: TableDemoProps) {
     console.log(props.guidataglie)
     let tempdata = fakeData1
@@ -309,13 +345,7 @@ export function TableDemo(props: TableDemoProps) {
         tempdata = fakeData6
 
     }else if (props.guidataglie ===7){
-        tempdata = fakeData1
-
-    }else if (props.guidataglie ===8){
-        tempdata = fakeData1
-
-    }else if (props.guidataglie ===9){
-        tempdata = fakeData1
+        tempdata = fakeData7
 
     }
 
