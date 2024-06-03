@@ -67,7 +67,7 @@ export default async function RelatedProducts({
           Prodotti correlati
         </span>
         <p className="text-2xl-regular text-ui-fg-base max-w-lg">
-          Potresti anche vole dare un occhiata a questi prodotti.
+          Potresti anche voler dare un occhiata a questi prodotti.
         </p>
       </div>
 
