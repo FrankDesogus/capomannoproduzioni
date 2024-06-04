@@ -93,12 +93,12 @@ const fakeData2: Order[] = [
 export function TableDemoKid1(props: TableDemoProps) {
     console.log(props.guidataglie)
     let tempdata = fakeData1
-    if (props.guidataglie === 8) {
+    if (props.guidataglie === 10) {
         console.log(props.guidataglie)
 
         tempdata = fakeData1
 
-    } else if (props.guidataglie === 9) {
+    } else if (props.guidataglie === 11) {
         console.log(props.guidataglie)
 
         tempdata = fakeData2

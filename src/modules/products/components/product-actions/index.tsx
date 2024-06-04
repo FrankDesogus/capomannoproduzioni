@@ -159,9 +159,9 @@ export default function ProductActions({
     const renderComponentByValue = (valuez:number) => {
       if ([1, 2, 3, 4,5,6,7].includes(valuez)) {
         return <TableDemo guidataglie={valuez} />;
-      } else if ([8, 9].includes(valuez)) {
+      } else if ([10, 11].includes(valuez)) {
         return <TableDemoKid1 guidataglie={valuez} />;
-      } else if ([10,11].includes(valuez)) {
+      } else if ([8,9].includes(valuez)) {
         return <TableDemoKid2 guidataglie={valuez} />;
       } else {
         return null;

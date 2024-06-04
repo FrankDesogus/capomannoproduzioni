@@ -51,6 +51,7 @@ const ProductInfoTab = ({ product }: ProductTabsProps) => {
             <span className="font-semibold">Materiale</span>
             <p>{product.material ? product.material : "-"}</p>
           </div>
+          {/*
           <div>
             <span className="font-semibold">Paese di origine</span>
             <p>{product.origin_country ? product.origin_country : "-"}</p>
@@ -59,7 +60,9 @@ const ProductInfoTab = ({ product }: ProductTabsProps) => {
             <span className="font-semibold">Tipo</span>
             <p>{product.type ? product.type.value : "-"}</p>
           </div>
+          */}
         </div>
+          {/*
         <div className="flex flex-col gap-y-4">
           <div>
             <span className="font-semibold">Peso</span>
@@ -74,6 +77,7 @@ const ProductInfoTab = ({ product }: ProductTabsProps) => {
             </p>
           </div>
         </div>
+        */}
       </div>
       {product.tags?.length ? (
         <div>
