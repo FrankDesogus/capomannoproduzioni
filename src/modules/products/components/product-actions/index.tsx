@@ -225,6 +225,19 @@ export default function ProductActions({
                   </div>
                 );
                 
+              }else{
+                return (
+                  <div key={option.id}>
+                    <OptionSelect
+                      option={option}
+                      current={options[option.id]}
+                      updateOption={updateOptions}
+                      title={option.title}
+                      data-testid="product-options"
+                      disabled={!!disabled || isAdding}
+                    />
+                  </div>
+                )
               }
               }
               )}
