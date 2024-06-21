@@ -317,6 +317,130 @@ const fakeData7: Order[] = [
     },
 
 ]
+
+//  Linea Abito Capo Mannu
+const fakeData12: Order[] = [
+
+    {
+        i: "Lunghezza torace (cm)",
+        s: "43",
+        m: "45",
+        l: "48",
+        xl: "50",
+        xxl: "54",
+    },
+
+]
+//  Felpa zip cap.
+const fakeData13: Order[] = [
+
+    {
+        i: "IT",
+        xs:"46",
+        s: "48",
+        m: "50",
+        l: "52",
+        xl: "54",
+        xxl: "56",
+        xxxl:"58",
+        xxxxl:"60"
+
+
+    },
+    {
+        i: "Lunghezza complessiva (cm)",
+        xs: "64",
+        s:"66",
+        m: "67",
+        l: "69",
+        xl: "71",
+        xxl: "71",
+        xxxl:"72",
+        xxxxl:"73"
+    },
+    {
+        i: "Lunghezza torace (cm)",
+        xs:"56",
+        s: "57",
+        m: "58",
+        l: "62",
+        xl: "65",
+        xxl: "66",
+        xxxl:"67",
+        xxxxl:"68"
+    },
+    {
+        i: "Lunghezza manica (cm)",
+        xs:"50",
+        s: "51",
+        m: "52",
+        l: "53",
+        xl: "54",
+        xxl: "54",
+        xxxl:"54",
+        xxxxl:"54"
+    },
+]
+//  Felpa zip donna no stampa
+const fakeData14: Order[] = [
+  
+    {
+        i: "Lunghezza complessiva (cm)",
+        xs: "57",
+        s:"58",
+        m: "59",
+        l: "60",
+        xl: "61",
+        xxl: "62",
+        xxxl:"63",
+        xxxxl:"64"
+    },
+    {
+        i: "Lunghezza torace (cm)",
+        xs:"48",
+        s: "50",
+        m: "52",
+        l: "54",
+        xl: "56",
+        xxl: "58",
+        xxxl:"63",
+        xxxxl:"65"
+    },
+    {
+        i: "Lunghezza manica (cm)",
+        xs:"51",
+        s: "62",
+        m: "63",
+        l: "64",
+        xl: "65",
+        xxl: "66",
+        xxxl:"67",
+        xxxxl:"69"
+    },
+]
+const fakeData15: Order[] = [
+  
+    {
+        i: "Lunghezza complessiva (cm)",
+        xs: "60",
+        s:"61",
+        m: "63",
+        l: "66",
+        xl: "68",
+        xxl: "69",
+        xxxl:"71",
+    },
+    {
+        i: "Lunghezza torace (cm)",
+        xs:"42",
+        s: "45",
+        m: "46",
+        l: "47",
+        xl: "50",
+        xxl: "53",
+        xxxl:"55",
+    },
+]
 export function TableDemo(props: TableDemoProps) {
     console.log(props.guidataglie)
     let tempdata = fakeData1
@@ -346,6 +470,18 @@ export function TableDemo(props: TableDemoProps) {
 
     }else if (props.guidataglie ===7){
         tempdata = fakeData7
+
+    }else if (props.guidataglie ===12){
+        tempdata = fakeData12
+
+    }else if (props.guidataglie ===13){
+        tempdata = fakeData13
+
+    }else if (props.guidataglie ===14){
+        tempdata = fakeData14
+
+    }else if (props.guidataglie ===15){
+        tempdata = fakeData15
 
     }
 

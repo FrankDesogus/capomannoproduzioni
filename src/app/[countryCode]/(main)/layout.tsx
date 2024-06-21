@@ -17,7 +17,7 @@ export default async function PageLayout(props: { children: React.ReactNode }) {
   return (
     <>
       <Nav />
-      <PasswordProtectedContent>{props.children}</PasswordProtectedContent>
+      {props.children}
       <Footer />
     </>
   );

@@ -4,14 +4,18 @@ import { listRegions } from "@lib/data"
 import LocalizedClientLink from "@modules/common/components/localized-client-link"
 import CartButton from "@modules/layout/components/cart-button"
 import SideMenu from "@modules/layout/components/side-menu"
+import Image from "next/image"
 
 export default async function Nav() {
   const regions = await listRegions().then((regions) => regions)
 
   return (
     <div className="sticky top-0 inset-x-0 z-50 group">
-      <header className="relative h-16 mx-auto border-b duration-200 bg-white border-ui-border-base">
-        <nav className="content-container txt-xsmall-plus text-ui-fg-subtle flex items-center justify-between w-full h-full text-small-regular">
+      <div className="relative h-4 mx-auto duration-200 bg-black text-xs text-center text-ui-fg-on-color">resistenza e sostenibiltà in ogni filo del tessuto</div>
+
+      <header className="absolute h-16 mx-auto duration-200 bg-black bg-opacity-10 w-full">
+        <nav className="border-b-2 border-white content-container txt-xsmall-plus text-ui-fg-on-color flex items-center justify-between w-[90%] mx-auto h-full text-small-regular">
+          
           <div className="flex-1 basis-0 h-full flex items-center">
             <div className="h-full">
               <SideMenu regions={regions} />
@@ -19,11 +23,14 @@ export default async function Nav() {
           </div>
 
           <div className="flex items-center h-full">
+          <Image src={'https://mic-medusademo-tq9pqli72b-orientando-5-mediabucket-cexuvpvnsfar.s3.eu-central-1.amazonaws.com/GrandeOndaDentata.png'} width={50} height={50} alt={"logo"} />
+
             <LocalizedClientLink
               href="/"
-              className="txt-compact-xlarge-plus hover:text-ui-fg-base uppercase"
+              className="text-xl small:text-4xl md:text-2xl hover:text-ui-fg-base uppercase ml-2"
               data-testid="nav-store-link"
             >
+              
               Orientando Capo Mannu
             </LocalizedClientLink>
           </div>
@@ -62,7 +69,18 @@ export default async function Nav() {
               <CartButton />
             </Suspense>
           </div>
+
         </nav>
+        <div className="relative h-4 mx-auto duration-200 bg-black bg-opacity-0 text-xs text-center text-ui-fg-on-color">
+        <ul className="flex space-x-8">
+            <li><a href="#" className="text-white hover:text-gray-300">Collezione Uomo</a></li>
+            <li><a href="#" className="text-white hover:text-gray-300">Collezione Donna</a></li>
+            <li><a href="#" className="text-white hover:text-gray-300">Borse</a></li>
+            <li><a href="#" className="text-white hover:text-gray-300">Accessori</a></li>
+            <li><a href="#" className="text-white hover:text-gray-300">Altro</a></li>
+          </ul>
+          </div>
+
       </header>
     </div>
   )
