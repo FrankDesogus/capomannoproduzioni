@@ -74,7 +74,7 @@ export default async function Nav() {
         <div className="invisible small:visible relative h-8 mx-auto duration-200 bg-black bg-opacity-10 text-center text-ui-fg-on-color w-[80%] text-l">
         <ul className="flex space-x-6 items-center text-center justify-center">
             <li><a href="#" className="text-white hover:text-gray-300">Abbigliamento Capo Mannu</a></li>
-            <li><a href="/collection/abbigliamentoetnico" className="text-white hover:text-gray-300">Abbigliamento Etnico</a></li>
+            <li><a href="/collections/abbiglimentoetnico" className="text-white hover:text-gray-300">Abbigliamento Etnico</a></li>
             <li><a href="#" className="text-white hover:text-gray-300">Accessori</a></li>
             <li><a href="#" className="text-white hover:text-gray-300">Bijoux</a></li>
             <li><a href="#" className="text-white hover:text-gray-300">Borse</a></li>
