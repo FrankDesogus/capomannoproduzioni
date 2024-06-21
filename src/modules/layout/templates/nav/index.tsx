@@ -13,7 +13,7 @@ export default async function Nav() {
     <div className="sticky top-0 inset-x-0 z-50 group">
       <div className="relative h-4 mx-auto duration-200 bg-black text-xs text-center text-ui-fg-on-color">resistenza e sostenibiltà in ogni filo del tessuto</div>
 
-      <header className="absolute h-16 mx-auto duration-200 bg-black bg-opacity-10 w-full">
+      <header className="relative h-16 mx-auto duration-200 bg-black bg-opacity-10 w-full">
         <nav className="border-b-2 border-white content-container txt-xsmall-plus text-ui-fg-on-color flex items-center justify-between w-[90%] mx-auto h-full text-small-regular">
           
           <div className="flex-1 basis-0 h-full flex items-center">
@@ -71,13 +71,16 @@ export default async function Nav() {
           </div>
 
         </nav>
-        <div className="relative h-4 mx-auto duration-200 bg-black bg-opacity-0 text-xs text-center text-ui-fg-on-color">
-        <ul className="flex space-x-8">
-            <li><a href="#" className="text-white hover:text-gray-300">Collezione Uomo</a></li>
-            <li><a href="#" className="text-white hover:text-gray-300">Collezione Donna</a></li>
-            <li><a href="#" className="text-white hover:text-gray-300">Borse</a></li>
+        <div className="invisible small:visible relative h-8 mx-auto duration-200 bg-black bg-opacity-10 text-center text-ui-fg-on-color w-[80%] text-l">
+        <ul className="flex space-x-4 items-center text-center">
+            <li><a href="#" className="text-white hover:text-gray-300">Abbigliamento Capo Mannu</a></li>
+            <li><a href="#" className="text-white hover:text-gray-300">Abbigliamento Etnico</a></li>
             <li><a href="#" className="text-white hover:text-gray-300">Accessori</a></li>
-            <li><a href="#" className="text-white hover:text-gray-300">Altro</a></li>
+            <li><a href="#" className="text-white hover:text-gray-300">Bijoux</a></li>
+            <li><a href="#" className="text-white hover:text-gray-300">Borse</a></li>
+            <li><a href="#" className="text-white hover:text-gray-300">Uomo</a></li>
+            <li><a href="#" className="text-white hover:text-gray-300">Donna</a></li>
+            <li><a href="#" className="text-white hover:text-gray-300">Bambino</a></li>
           </ul>
           </div>
 
