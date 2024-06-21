@@ -73,14 +73,13 @@ export default async function Nav() {
         </nav>
         <div className="invisible small:visible relative h-8 mx-auto duration-200 bg-black bg-opacity-10 text-center text-ui-fg-on-color w-[80%] text-l">
         <ul className="flex space-x-6 items-center text-center justify-center">
-            <li><a href="#" className="text-white hover:text-gray-300">Abbigliamento Capo Mannu</a></li>
+            <li><a href="/collections/abbigliamentocapomannu" className="text-white hover:text-gray-300">Abbigliamento Capo Mannu</a></li>
             <li><a href="/collections/abbiglimentoetnico" className="text-white hover:text-gray-300">Abbigliamento Etnico</a></li>
-            <li><a href="#" className="text-white hover:text-gray-300">Accessori</a></li>
-            <li><a href="#" className="text-white hover:text-gray-300">Bijoux</a></li>
-            <li><a href="#" className="text-white hover:text-gray-300">Borse</a></li>
-            <li><a href="#" className="text-white hover:text-gray-300">Uomo</a></li>
-            <li><a href="#" className="text-white hover:text-gray-300">Donna</a></li>
-            <li><a href="#" className="text-white hover:text-gray-300">Bambino</a></li>
+            <li><a href="/collections/accessori" className="text-white hover:text-gray-300">Accessori</a></li>
+            <li><a href="/collections/bijoux" className="text-white hover:text-gray-300">Bijoux</a></li>
+            <li><a href="/categories/uomo" className="text-white hover:text-gray-300">Uomo</a></li>
+            <li><a href="/categories/donna" className="text-white hover:text-gray-300">Donna</a></li>
+            <li><a href="/categories/bambino" className="text-white hover:text-gray-300">Bambino</a></li>
           </ul>
           </div>
 
