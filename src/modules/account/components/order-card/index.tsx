@@ -40,7 +40,7 @@ const OrderCard = ({ order }: OrderCardProps) => {
         }`}</span>
       </div>
       <div className="grid grid-cols-2 small:grid-cols-4 gap-4 my-4">
-        {order.items.slice(0, 3).map((i) => {
+        {order.items.slice(0, 8).map((i) => {
           return (
             <div key={i.id} className="flex flex-col gap-y-2" data-testid="order-item">
               <Thumbnail thumbnail={i.thumbnail} images={[]} size="full" />
