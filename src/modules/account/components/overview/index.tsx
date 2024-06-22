@@ -68,7 +68,7 @@ const Overview = ({ customer, orders }: OverviewProps) => {
                                 numero ordine
                               </span>
                               <span className="font-semibold">
-                                import totale
+                                importo totale
                               </span>
                               <span data-testid="order-created-date">
                                 {new Date(order.created_at).toDateString()}

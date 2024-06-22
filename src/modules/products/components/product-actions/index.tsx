@@ -152,6 +152,19 @@ export default function ProductActions({
 
     setIsAdding(false)
   }
+  const handleAddToCartOutRunnedVariant = async () => {
+    if (!variant?.id) return null
+
+    setIsAdding(true)
+
+    await addToCart({
+      variantId: variant.id,
+      quantity: 1,
+      countryCode,
+    })
+
+    setIsAdding(false)
+  }
   const handlenothing = () => { }
 
   const isValidValue = !isNaN(value);

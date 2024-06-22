@@ -11,7 +11,7 @@ import ProductsFeature from "@modules/home/components/productsfeature"
 export const metadata: Metadata = {
   title: "Orientando Capo Mannu Productions",
   description:
-    "Il nuovo e-commerce aggiornato e performante per i nostri prodotti richiestissimi",
+    "",
 }
 
 const getCollectionsWithProducts = cache(
