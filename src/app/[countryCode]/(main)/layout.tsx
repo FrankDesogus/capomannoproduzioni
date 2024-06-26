@@ -8,7 +8,6 @@ import React from "react"
 import PasswordProtectedContent from "./statemanage"
 import Script from "next/script"
 import { Head } from "next/document"
-import ClientOnlyComponents from "./gdpr"
 
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || "https://localhost:8000"
 
@@ -23,7 +22,6 @@ export default async function PageLayout(props: { children: React.ReactNode }) {
       {props.children}      
       <Footer />
       {/* Inserisci il componente client-specific */}
-      <ClientOnlyComponents />
     </>
   );
 }
