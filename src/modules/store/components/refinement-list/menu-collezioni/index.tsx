@@ -12,7 +12,7 @@ export default async function ListaCollezzioni() {
             {collections && collections.length > 0 && (
                 <div className="flex flex-col gap-y-2">
                     <span className="txt-small-plus txt-ui-fg-base">
-                        Collezzioni
+                        Collezioni
                     </span>
                     <ul
                         className={clx(

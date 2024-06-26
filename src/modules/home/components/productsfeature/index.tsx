@@ -77,28 +77,36 @@ const ProductsFeature = () => {
           </div>
         </div>
 
-        <div className="relative py-16 flex items-end justify-center mb-16">
+        <div className="relative py-32 flex items-end justify-center mb-16">
           <Image
             src={
-              "https://mic-medusademo-tq9pqli72b-orientando-5-mediabucket-cexuvpvnsfar.s3.eu-central-1.amazonaws.com/GangstaClaudia.jpg"
+              "https://mic-medusademo-tq9pqli72b-orientando-5-mediabucket-cexuvpvnsfar.s3.eu-central-1.amazonaws.com/NonUnSempliceBrand.png"
             }
             alt="Image"
             fill
             style={{ objectFit: "cover" }}
           />
           <div className="absolute inset-0 bg-gray-900 opacity-5"></div>
-          <div className="max-w-6xl px-4 relative z-10 w-1/2 bg-white bg-opacity-80 ml-auto mr-8">
-            {/* Contenuto della sezione */}
-            <h1 className="text-4xl text-black text-center py-8 font-extrabold">
-              Non un semplice brand ma una filosofia di vita.
-            </h1>
-            <p className="text-xl text-black text-center py-8 font-extrabold">
-              Passione per il mare e attenzione per i materiali si fondono dando
-              vita a capi unici, curati nei minimi dettagli e pensati per
-              accompagnarti nel tempo.
-            </p>
+          <div className="relative z-10 w-[60%] bg-stone-500 bg-opacity-50 ml-auto grid grid-cols-2 gap-4">
+            <div className="mr-16 uppercase px-2">
+              {/* Contenuto della sezione */}
+              <h1 className="text-5xl text-black text-opacity-50 text-center py-2 font-extrabold">
+                Non un semplice brand ...
+              </h1>
+              <p className="text-xl text-white text-center py-2">
+                ma una filosofia di vita
+              </p>
+            </div>
+            <div>
+              <h3 className="text-md text-white text-center py-2 font-abold uppercase px-8">
+                Passione per il mare e attenzione per i materiali si fondono dando
+                vita a capi unici, curati nei minimi dettagli e pensati per
+                accompagnarti nel tempo.
+              </h3>
+            </div>
           </div>
         </div>
+
         <h1 className="text-black text-5xl small:text-8xl justify-center text-center mx-auto w-full uppercase my-12">
           BIJOUX e ACCESSORI{" "}
         </h1>
