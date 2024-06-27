@@ -1,4 +1,6 @@
 import { Table } from "@medusajs/ui"
+import Image from "next/image";
+
 
 
 interface TableDemoProps {
@@ -106,44 +108,56 @@ export function TableDemoKid1(props: TableDemoProps) {
     }
 
     return (
-        <Table>
-            <Table.Header>
-                <Table.Row>
-                    <Table.HeaderCell>INT.</Table.HeaderCell>
-                    <Table.HeaderCell>0-1</Table.HeaderCell>
-                    <Table.HeaderCell>1-2</Table.HeaderCell>
-                    <Table.HeaderCell>3-4</Table.HeaderCell>
-                    <Table.HeaderCell>5-6</Table.HeaderCell>
-                    <Table.HeaderCell>7-8</Table.HeaderCell>
-                    <Table.HeaderCell>9-10</Table.HeaderCell>
-                    <Table.HeaderCell>11-12</Table.HeaderCell>
-                    <Table.HeaderCell>13-14</Table.HeaderCell>
+        <>
+            <Table>
+                <Table.Header>
+                    <Table.Row>
+                        <Table.HeaderCell>INT.</Table.HeaderCell>
+                        <Table.HeaderCell>0-1</Table.HeaderCell>
+                        <Table.HeaderCell>1-2</Table.HeaderCell>
+                        <Table.HeaderCell>3-4</Table.HeaderCell>
+                        <Table.HeaderCell>5-6</Table.HeaderCell>
+                        <Table.HeaderCell>7-8</Table.HeaderCell>
+                        <Table.HeaderCell>9-10</Table.HeaderCell>
+                        <Table.HeaderCell>11-12</Table.HeaderCell>
+                        <Table.HeaderCell>13-14</Table.HeaderCell>
 
-                    <Table.HeaderCell></Table.HeaderCell>
-                </Table.Row>
-            </Table.Header>
-            <Table.Body>
-                {tempdata.map((order) => {
-                    return (
-                        <Table.Row
-                            key={order.i}
-                            className="[&_td:last-child]:w-[1%] [&_td:last-child]:whitespace-nowrap"
-                        >
-                            <Table.Cell>{order.i}</Table.Cell>
-                            <Table.Cell>{order.zero}</Table.Cell>
-                            <Table.Cell>{order.uno}</Table.Cell>
-                            <Table.Cell>{order.tre}</Table.Cell>
-                            <Table.Cell>{order.cinque}</Table.Cell>
-                            <Table.Cell>{order.sette}</Table.Cell>
-                            <Table.Cell>{order.nove}</Table.Cell>
-                            <Table.Cell>{order.undici}</Table.Cell>
-                            <Table.Cell>{order.tredici}</Table.Cell>
+                        <Table.HeaderCell></Table.HeaderCell>
+                    </Table.Row>
+                </Table.Header>
+                <Table.Body>
+                    {tempdata.map((order) => {
+                        return (
+                            <Table.Row
+                                key={order.i}
+                                className="[&_td:last-child]:w-[1%] [&_td:last-child]:whitespace-nowrap"
+                            >
+                                <Table.Cell>{order.i}</Table.Cell>
+                                <Table.Cell>{order.zero}</Table.Cell>
+                                <Table.Cell>{order.uno}</Table.Cell>
+                                <Table.Cell>{order.tre}</Table.Cell>
+                                <Table.Cell>{order.cinque}</Table.Cell>
+                                <Table.Cell>{order.sette}</Table.Cell>
+                                <Table.Cell>{order.nove}</Table.Cell>
+                                <Table.Cell>{order.undici}</Table.Cell>
+                                <Table.Cell>{order.tredici}</Table.Cell>
 
 
-                        </Table.Row>
-                    )
-                })}
-            </Table.Body>
-        </Table>
+                            </Table.Row>
+                        )
+                    })}
+                </Table.Body>
+            </Table>
+            <div className="image-container">
+                <Image
+                    src={"https://mic-medusademo-tq9pqli72b-orientando-5-mediabucket-cexuvpvnsfar.s3.eu-central-1.amazonaws.com/GuidaAlletaglieModalView.jpeg"}
+                    alt="Below the table"
+                    layout="responsive"
+                    width={700}
+                    height={475}
+                    className="table-image"
+                />
+            </div>
+        </>
     )
 }
