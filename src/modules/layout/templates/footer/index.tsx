@@ -4,6 +4,7 @@ import { getCategoriesList, getCollectionsList } from "@lib/data"
 
 import LocalizedClientLink from "@modules/common/components/localized-client-link"
 import MedusaCTA from "@modules/layout/components/medusa-cta"
+import IubendaLinks from "./iubenda"
 
 export default async function Footer() {
   const { collections } = await getCollectionsList()
@@ -147,6 +148,7 @@ export default async function Footer() {
             © {new Date().getFullYear()} Orientando Capo Mannu Production. All rights reserved.
           </Text>
           <MedusaCTA />
+          <IubendaLinks />
         </div>
       </div>
     </footer>

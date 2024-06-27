@@ -19,8 +19,9 @@ export default async function PageLayout(props: { children: React.ReactNode }) {
   return (
     <>
       <Nav />
-      {props.children}      
+      {props.children}
       <Footer />
+
       {/* Inserisci il componente client-specific */}
     </>
   );
