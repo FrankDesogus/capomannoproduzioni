@@ -12,9 +12,10 @@ export default function ProductRail({
   collection: ProductCollectionWithPreviews
   region: Region
 }) {
-  const { products } = collection
+  const { products, title } = collection
 
-  if (!products) {
+  // Check if products exist, if there are any products, and if the title is "Costumi"
+  if (!products || products.length === 0 || title === "Costumi") {
     return null
   }
 
@@ -27,16 +28,15 @@ export default function ProductRail({
         </InteractiveLink>
       </div>
       <ul className="grid grid-cols-2 small:grid-cols-3 gap-x-6 gap-y-24 small:gap-y-36">
-        {products &&
-          products.slice(0, 3).map((product) => (
-            <li key={product.id}>
-              <ProductPreview
-                productPreview={product}
-                region={region}
-                isFeatured
-              />
-            </li>
-          ))}
+        {products.slice(0, 3).map((product) => (
+          <li key={product.id}>
+            <ProductPreview
+              productPreview={product}
+              region={region}
+              isFeatured
+            />
+          </li>
+        ))}
       </ul>
     </div>
   )
