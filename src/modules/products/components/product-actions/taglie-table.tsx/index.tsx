@@ -1,4 +1,5 @@
 import { Table } from "@medusajs/ui"
+import Image from 'next/image'
 
 
 interface TableDemoProps {
@@ -486,6 +487,7 @@ export function TableDemo(props: TableDemoProps) {
     }
 
     return (
+        <>
         <Table>
             <Table.Header>
                 <Table.Row>
@@ -524,5 +526,16 @@ export function TableDemo(props: TableDemoProps) {
                 })}
             </Table.Body>
         </Table>
+         <div className="image-container">
+         <Image
+           src={"https://mic-medusademo-tq9pqli72b-orientando-5-mediabucket-cexuvpvnsfar.s3.eu-central-1.amazonaws.com/GuidaAlletaglieModalView.jpeg"}
+           alt="Below the table"
+           layout="responsive"
+           width={700}
+           height={475}
+           className="table-image"
+         />
+       </div>
+       </>
     )
 }
