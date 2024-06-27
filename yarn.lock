@@ -901,6 +901,11 @@
   dependencies:
     meilisearch "0.25.1"
 
+"@mep-agency/next-iubenda@^1.0.0-alpha5":
+  version "1.0.0-alpha5"
+  resolved "https://registry.yarnpkg.com/@mep-agency/next-iubenda/-/next-iubenda-1.0.0-alpha5.tgz#128d485e372ebf095a47f5d7985c05fec9bfcdb3"
+  integrity sha512-UR6i0Dwb1gcOhrSkLRyY8C8xJdvvIxnZt5921MzV7AzAt7/7ZqvR9qrryk2EDIOxyoRS5fsbtkoKc9cvCPCsMw==
+
 "@mikro-orm/core@5.7.12":
   version "5.7.12"
   resolved "https://registry.npmjs.org/@mikro-orm/core/-/core-5.7.12.tgz"

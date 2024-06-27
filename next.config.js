@@ -5,6 +5,7 @@ const store = require("./store.config.json")
  * @type {import('next').NextConfig}
  */
 const nextConfig = withStoreConfig({
+  transpilePackages: ['@mep-agency/next-iubenda'],
   features: store.features,
   reactStrictMode: true,
   images: {
